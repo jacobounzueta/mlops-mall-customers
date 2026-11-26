@@ -1,0 +1,58 @@
+name: Reportar un bug
+description: Reporta un comportamiento inesperado del pipeline, la API o los dashboards.
+title: "[bug] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por reportar. Incluye la mayor cantidad de contexto posible para reproducirlo.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción del problema
+      description: ¿Qué esperabas que pasara y qué pasó realmente?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducir
+      placeholder: |
+        1. docker compose up -d
+        2. curl -X POST http://localhost:8000/predict ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs o trazas
+      description: Salida relevante de `docker compose logs`, pytest o MLflow.
+      render: shell
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Componente afectado
+      options:
+        - Ingesta y limpieza de datos
+        - Clustering
+        - Entrenamiento / MLflow
+        - API FastAPI
+        - Streamlit
+        - Prometheus / Grafana
+        - CI / Docker
+        - Otro
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Entorno
+      description: SO, versión de Python, Docker y navegador si aplica.
+      placeholder: Windows 11, Python 3.12.10, Docker 29.9.2

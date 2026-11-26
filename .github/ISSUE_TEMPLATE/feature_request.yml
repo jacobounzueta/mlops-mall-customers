@@ -1,0 +1,37 @@
+name: Proponer una mejora
+description: Sugiere una funcionalidad o mejora para el laboratorio.
+title: "[feat] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema o necesidad
+      description: ¿Qué limitación existe hoy?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Propuesta
+      description: Describe la solución que imaginas y su impacto.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+      description: Otras opciones y por qué no las prefieres.
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Alcance estimado
+      options:
+        - Pequeño (horas)
+        - Medio (1-2 días)
+        - Grande (más de 2 días)
+    validations:
+      required: true

@@ -1,0 +1,15 @@
+# Propietarios del código
+* @jacobounzueta @stiwardprieto
+
+# Pipeline de datos y modelos
+/src/ @jacobounzueta @stiwardprieto
+/tests/ @jacobounzueta @stiwardprieto
+
+# Serving y observabilidad
+/api/ @jacobounzueta
+/docker/ @jacobounzueta
+/app/ @stiwardprieto
+
+# Documentación
+/docs/ @jacobounzueta @stiwardprieto
+/README.md @jacobounzueta @stiwardprieto
