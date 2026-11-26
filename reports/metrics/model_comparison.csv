@@ -1,0 +1,4 @@
+model_name,run_id,accuracy,precision_weighted,recall_weighted,f1_weighted,f1_macro,log_loss
+logistic_regression,aa0f6677955c42b5aee9d1e31fb97842,1.0,1.0,1.0,1.0,1.0,0.133502
+random_forest,89fd75fb236241faa5634de89c388f2b,1.0,1.0,1.0,1.0,1.0,0.025854
+gradient_boosting,281bfd1a13c8435799609727d9095734,1.0,1.0,1.0,1.0,1.0,0.0

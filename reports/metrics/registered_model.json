@@ -1,0 +1,14 @@
+{
+  "run_id": "281bfd1a13c8435799609727d9095734",
+  "model_name": "mall-customer-segment-classifier",
+  "version": "1",
+  "alias": "champion",
+  "metrics": {
+    "accuracy": 1.0,
+    "precision_weighted": 1.0,
+    "recall_weighted": 1.0,
+    "f1_weighted": 1.0,
+    "f1_macro": 1.0,
+    "log_loss": 0.0
+  }
+}
