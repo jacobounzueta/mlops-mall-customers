@@ -1,0 +1,5 @@
+customer_segment,size,age,annual_income_k,spending_score,gender_ratio_male,segment_label
+0,23,45.217,26.304,20.913,0.391,Bajo valor
+1,38,40.395,87.0,18.632,0.526,Conservador
+2,100,39.2,48.26,56.48,0.41,Estándar
+3,39,32.692,86.538,82.128,0.462,Premium

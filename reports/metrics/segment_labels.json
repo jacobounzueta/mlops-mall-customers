@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-11-26T01:14:33.641178+00:00",
+  "n_clusters": 4,
+  "global_means": {
+    "gender": 0.44,
+    "age": 38.85,
+    "annual_income_k": 60.56,
+    "spending_score": 50.2
+  },
+  "feature_columns": [
+    "gender",
+    "age",
+    "annual_income_k",
+    "spending_score"
+  ],
+  "segments": {
+    "0": {
+      "label": "Bajo valor",
+      "description": "Ingreso y gasto bajos. Menor prioridad comercial.",
+      "income_level": "low",
+      "spending_level": "low",
+      "size": 23
+    },
+    "1": {
+      "label": "Conservador",
+      "description": "Ingreso alto y gasto bajo. Potencial sin explotar.",
+      "income_level": "high",
+      "spending_level": "low",
+      "size": 38
+    },
+    "2": {
+      "label": "Estándar",
+      "description": "Ingreso y gasto cercanos a la media del mall.",
+      "income_level": "mid",
+      "spending_level": "mid",
+      "size": 100
+    },
+    "3": {
+      "label": "Premium",
+      "description": "Ingreso alto y gasto alto. El segmento de mayor valor.",
+      "income_level": "high",
+      "spending_level": "high",
+      "size": 39
+    }
+  }
+}
