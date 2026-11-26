@@ -1,0 +1,32 @@
+{
+  "rows": 200,
+  "columns": [
+    "gender",
+    "age",
+    "annual_income_k",
+    "spending_score"
+  ],
+  "nulls": 0,
+  "duplicates": 0,
+  "gender_distribution": {
+    "Female": 0.56,
+    "Male": 0.44
+  },
+  "ranges": {
+    "age": {
+      "min": 18.0,
+      "max": 70.0,
+      "mean": 38.85
+    },
+    "annual_income_k": {
+      "min": 15.0,
+      "max": 137.0,
+      "mean": 60.56
+    },
+    "spending_score": {
+      "min": 1.0,
+      "max": 99.0,
+      "mean": 50.2
+    }
+  }
+}
