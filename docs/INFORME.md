@@ -263,7 +263,8 @@ Resultado: **28 tests aprobados** y lint sin errores. La suite cubre:
 
 El workflow de GitHub Actions ejecuta tres jobs: calidad (lint + tests),
 pipeline (datos + clustering + verificación de artefactos) y build de la imagen
-Docker de la API.
+Docker de la API. Los tres se ejecutaron en verde sobre `main`; el historial está
+en <https://github.com/jacobounzueta/mlops-mall-customers/actions>.
 
 ---
 
