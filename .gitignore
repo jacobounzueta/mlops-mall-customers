@@ -1,0 +1,34 @@
+# Entorno virtual y cachés de Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Secretos y configuración local
+.env
+.env.local
+
+# Datos generados (el CSV crudo sí se versiona para que el CI funcione)
+data/processed/*
+data/monitoring/*
+!data/processed/.gitkeep
+!data/monitoring/.gitkeep
+
+# Artefactos de MLflow y modelos locales
+mlflow/
+mlruns/
+mlartifacts/
+mlflow.db
+models/*
+!models/.gitkeep
+
+# Sistema operativo / editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/settings.json
+
+# Streamlit
+.streamlit/secrets.toml

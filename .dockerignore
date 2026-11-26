@@ -1,0 +1,23 @@
+.venv/
+.git/
+.github/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Datos generados y artefactos
+mlflow/
+data/monitoring/
+reports/figures/
+models/
+
+# Documentación y tests no necesarios dentro de la imagen
+docs/
+tests/
+*.md
+!requirements.txt
+
+.env
+.env.local

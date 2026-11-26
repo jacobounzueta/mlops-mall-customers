@@ -1,0 +1,19 @@
+# Normalizar finales de línea (evita diffs gigantes entre Windows y CI)
+* text=auto eol=lf
+
+# Binarios
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.joblib binary
+*.pkl binary
+
+# Docker y YAML
+Dockerfile text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+Makefile text eol=lf
+
+# Notebooks
+*.ipynb text eol=lf
