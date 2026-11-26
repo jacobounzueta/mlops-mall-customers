@@ -1,0 +1,102 @@
+{
+  "generated_at": "2026-11-26T01:27:41.587833+00:00",
+  "api_url": "http://127.0.0.1:8000",
+  "ok": true,
+  "checks": [
+    {
+      "name": "GET /health",
+      "status_code": 200,
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "POST /predict #1",
+      "status_code": 200,
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "POST /predict #2",
+      "status_code": 200,
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "POST /predict #3",
+      "status_code": 200,
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "POST /predict/batch",
+      "status_code": 200,
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /predictions/recent",
+      "status_code": 200,
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GET /metrics",
+      "status_code": 200,
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "POST /predict inválido",
+      "status_code": 422,
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "sample_predictions": [
+    {
+      "customer_segment": 3,
+      "segment_label": "Premium",
+      "segment_description": "Ingreso alto y gasto alto. El segmento de mayor valor.",
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 1.0
+      },
+      "model_name": "mall-customer-segment-classifier",
+      "model_version": "1",
+      "latency_ms": 3.102,
+      "timestamp": "2026-11-26T01:27:41.451283+00:00"
+    },
+    {
+      "customer_segment": 0,
+      "segment_label": "Bajo valor",
+      "segment_description": "Ingreso y gasto bajos. Menor prioridad comercial.",
+      "probabilities": {
+        "0": 1.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      },
+      "model_name": "mall-customer-segment-classifier",
+      "model_version": "1",
+      "latency_ms": 2.683,
+      "timestamp": "2026-11-26T01:27:41.483164+00:00"
+    },
+    {
+      "customer_segment": 2,
+      "segment_label": "Estándar",
+      "segment_description": "Ingreso y gasto cercanos a la media del mall.",
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 1.0,
+        "3": 0.0
+      },
+      "model_name": "mall-customer-segment-classifier",
+      "model_version": "1",
+      "latency_ms": 2.627,
+      "timestamp": "2026-11-26T01:27:41.513828+00:00"
+    }
+  ]
+}
